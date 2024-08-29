@@ -9,6 +9,9 @@ std::vector<uint64_t> GeneratePrimes(uint64_t nums)
     while (primes.size() < nums) {
         bool isPrime = true;
         for (const uint64_t &p : primes) {
+            if (p > std::sqrt(i)) {
+                break;
+            }
             if (i % p == 0) {
                 isPrime = false;
                 break;
