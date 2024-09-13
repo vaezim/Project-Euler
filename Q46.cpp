@@ -1,11 +1,11 @@
 #include <cmath>
 #include <iostream>
-#include "prime_generator.h"
+#include "utils.h"
 
 
 int main()
 {
-    const auto &primes = GeneratePrimes(1000);
+    const auto &primes = Utils::GeneratePrimes(1000);
     int odd{ 3 };
     while (true) {
         bool isGoldbach = false;

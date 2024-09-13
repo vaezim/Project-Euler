@@ -1,14 +1,14 @@
 #include <queue>
 #include <cmath>
 #include <iostream>
-#include "prime_generator.h"
+#include "utils.h"
 
 
 int main()
 {
     uint64_t Y = 500500;
     uint64_t m = 500500507;
-    const auto &primes = GeneratePrimes(600'000); // > Y
+    const auto &primes = Utils::GeneratePrimes(600'000); // > Y
 
     std::priority_queue<uint64_t,
         std::vector<uint64_t>, std::greater<uint64_t>> queue;

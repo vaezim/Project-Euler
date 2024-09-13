@@ -1,10 +1,10 @@
 #include <iostream>
-#include "prime_generator.h"
+#include "utils.h"
 
 
 int main()
 {
-    const auto &primes = GeneratePrimes(150'000);
+    const auto &primes = Utils::GeneratePrimes(150'000);
     uint64_t sum{ 0 };
     for (const auto &p : primes) {
         if (p > 2'000'000) {
