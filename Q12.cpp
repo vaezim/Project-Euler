@@ -12,7 +12,7 @@ int main()
     uint64_t i{ 2 };
     while(true) {
         n += i++;
-        const auto &divisors = Utils::GetDivisors(primes, n);
+        const auto &divisors = Utils::GetPrimeFactors(primes, n);
         if (GetNumDivisors(divisors) > 500) {
             break;
         }
